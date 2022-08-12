@@ -36,6 +36,12 @@ app.post('/posts/:id/comments', async (req, res) => {
  res.status(201).send(comments);
 });
 
+// receive events
+app.post('/events', (req, res) => {
+    console.log('Received Events', req.body.type);
+
+    res.send({});
+});
 
 app.listen(4001, () => {
     console.log('Comments Service Listing on 4001');
