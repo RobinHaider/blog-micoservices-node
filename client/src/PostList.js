@@ -13,7 +13,7 @@ const PostList = () => {
   console.log(posts);
 
   const fetchPosts = async () => {
-    const res = await axios.get('http://posts.com/posts');
+    const res = await axios.get('http://posts.com:81/posts');
 
     setPosts(res.data);
   };
