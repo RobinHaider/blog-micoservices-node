@@ -45,7 +45,7 @@ Edit your host file (if windows "C:\Windows\System32\drivers\etc\hosts"). Add th
 Then inside blog-micoservices-node/infra/ingress-nginx/ run
 
 ```bash
-  kubectl apply -y ingress-controller.yaml
+  kubectl apply -f ingress-controller.yaml
 ```
 Then in root folder run
 
